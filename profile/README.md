@@ -16,28 +16,35 @@ Cada logo combina a laranja com um icone associado ao contexto da aplicacao:
 
 <table>
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
+      <img src="./assets/orenji-fitness-logo.png" alt="Orenji Fitness com haltere" width="160">
+      <br>
+      <strong>Fitness</strong>
+      <br>
+      <span>Treinos, progresso e saude fisica.</span>
+    </td>
+    <td align="center" width="20%">
       <img src="./assets/orenji-study-books-transparent.png" alt="Orenji Study com livros" width="160">
       <br>
       <strong>Study</strong>
       <br>
       <span>Organizacao de estudo, notas e materiais.</span>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
       <img src="./assets/orenji-study-checklist-transparent.png" alt="Orenji Tasks com checklist" width="160">
       <br>
       <strong>Tasks</strong>
       <br>
       <span>Listas, tarefas e acompanhamento de progresso.</span>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
       <img src="./assets/orenji-recipes-chef-transparent.png" alt="Orenji Recipes com chapeu de cozinheiro" width="160">
       <br>
       <strong>Recipes</strong>
       <br>
       <span>Receitas, cozinha e exploracao de pratos.</span>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
       <img src="./assets/orenji-focus-stopwatch-transparent.png" alt="Orenji Focus com cronometro" width="160">
       <br>
       <strong>Focus</strong>
@@ -133,4 +140,3 @@ O projeto encontra-se em desenvolvimento ativo. As principais prioridades sao:
 - Melhorar responsividade, acessibilidade e experiencia de utilizador.
 - Preparar capturas de ecra e demonstracoes para apresentacao em portfolio.
 - Continuar a aproximar Focus, Habit, Study, Recipes e Fitness atraves de dados locais, temas sincronizados e componentes partilhados.
-
