@@ -1,162 +1,136 @@
 # Orenji Project
 
-![Orenji logo](https://raw.githubusercontent.com/Orenji-Project/orenji-fitness-app/main/assets/logo.png "Orenji logo")
+![Orenji Project banner](./assets/orenji-project-banner.jpeg "Orenji Project banner")
 
-Welcome to the Orenji Project — an ecosystem of small web applications created as part of a student portfolio (PAF) to demonstrate front-end development skills. The organization contains multiple independent, mostly static web apps that share a lightweight design system in the Orenji-core repository.
+**Orenji Project** é um ecossistema de pequenas aplicacoes web criado como parte de um portfolio academico. O projeto junta varias areas do dia a dia, como estudo, receitas, foco, habitos e fitness, numa identidade visual comum inspirada no simbolo da laranja.
 
-This README reflects the current development state of the organization (June 2026). The project is actively in development.
-
----
-
-## Project overview
-
-Orenji is a collection of small, focused web applications (study tools, fitness tracker, recipes, and utilities) built primarily with HTML, CSS and JavaScript. Each application is its own repository so features can be developed and showcased independently while sharing common design tokens and assets in Orenji-core.
-
-The apps are student projects used in a primary PAF portfolio — they are not commercial products but are intended to show applied skills in UI, layout, and client-side behaviour.
+A ideia principal e simples: cada aplicacao pode funcionar de forma independente, mas todas partilham a mesma linguagem visual, a mesma base de organizacao e o mesmo objetivo de demonstrar competencias de desenvolvimento front-end com HTML, CSS e JavaScript.
 
 ---
 
-## Applications (repositories)
+## Identidade
 
-- orenji-fitness-app — Static fitness app with pages for workouts, summaries and settings. Files observed: `index.html`, `treinos.html`, `resumo.html`, `configuracoes.html`, `css/`, `js/`, and `assets/` (logos). Public.
-- Orenji-Recipes — Recipe browsing/demo app (static). Files observed: `index.html`, `receita.html`, `pesquisar.html`, `favoritos.html`, `cozinha.html`, plus `css/` and `js/`. Private.
-- Orenji-Study — Study tools (notes, calendar, tasks, schedule). Files observed: `index.html`, `dashboard.html`, `notas.html`, `tarefas.html`, `calendario.html`, `horario.html`, plus `css/` and `js/`. Private.
-- Orenji-core — Core design assets (CSS and JS used across apps). Files observed: `css/` and `js/`. Private.
-- Orenji-Focus-Orenji-Habit — Private repository (appears to contain focus/habit related apps). Access limited; contents were not inspected.
-- .github — Organization metadata (this repository). Contains `profile/README.md` (this file will be placed here).
+O nome **Orenji** vem da palavra japonesa para "laranja" e foi escolhido para representar uma marca jovem, simples e reconhecivel. A laranja funciona como simbolo central do projeto: aparece nos logos, cria unidade entre as aplicacoes e ajuda a distinguir cada modulo atraves de pequenos elementos visuais.
 
-Notes: I inspected each repository's root files and directories to prepare this summary — descriptions above only reflect files actually present in the repositories and do not assume back-end services or user accounts unless explicitly implemented.
+Cada logo combina a laranja com um icone associado ao contexto da aplicacao:
 
----
-
-## Current status
-
-- Overall: In active development (student portfolio). Work focuses on completing UI pages, consolidating a shared design system, and preparing the projects for inclusion in the portfolio.
-- Static UI pages: Implemented (HTML/CSS/JS) across repositories as simple single-page flows and multi-page demos.
-- Shared core (Orenji-core): Present, containing CSS and JS intended to be shared between apps.
-- Back end & persistence: Not present in inspected repos — there is no indication of server-side code or databases in the repositories reviewed.
-
-Completed features (implemented in the repos as of inspection):
-- Static pages and navigation for fitness, recipes, and study apps (HTML files found in each repo).
-- Visual identity assets (logos) available in `orenji-fitness-app/assets/`.
-- Core CSS/JS scaffolding in Orenji-core.
-
-In-development features (what is being worked on or should be considered in-progress):
-- Component consolidation and sharing between repositories using Orenji-core.
-- Responsive layout and accessibility improvements.
-- Preparing consistent README and documentation for each app.
-
-Planned features (suggested / roadmap items; not yet present):
-- Client-side data persistence (localStorage or small API) for tasks/notes/favorites.
-- Progressive Web App (PWA) support for offline access.
-- Continuous integration (linting/build) and automated deployment for portfolio showcasing.
-
----
-
-## Technologies
-
-Based on repository contents:
-- HTML (static pages)
-- CSS (plain CSS files in `css/` folders; Orenji-core contains shared styles)
-- JavaScript (vanilla JS in `js/` folders)
-
-No frameworks or back-end code were detected in the repositories inspected. If you plan to add frameworks (React/Vue) or Node-based tooling, document that in each repo's README.
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="./assets/orenji-study-books-transparent.png" alt="Orenji Study com livros" width="160">
+      <br>
+      <strong>Study</strong>
+      <br>
+      <span>Organizacao de estudo, notas e materiais.</span>
+    </td>
+    <td align="center" width="25%">
+      <img src="./assets/orenji-study-checklist-transparent.png" alt="Orenji Tasks com checklist" width="160">
+      <br>
+      <strong>Tasks</strong>
+      <br>
+      <span>Listas, tarefas e acompanhamento de progresso.</span>
+    </td>
+    <td align="center" width="25%">
+      <img src="./assets/orenji-recipes-chef-transparent.png" alt="Orenji Recipes com chapeu de cozinheiro" width="160">
+      <br>
+      <strong>Recipes</strong>
+      <br>
+      <span>Receitas, cozinha e exploracao de pratos.</span>
+    </td>
+    <td align="center" width="25%">
+      <img src="./assets/orenji-focus-stopwatch-transparent.png" alt="Orenji Focus com cronometro" width="160">
+      <br>
+      <strong>Focus</strong>
+      <br>
+      <span>Foco, tempo, produtividade e habitos.</span>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## Design system
+## Contexto do projeto
 
-Orenji-core contains the organization’s initial design assets (CSS and JS folders). Current state:
-- Core tokens and styles: present as static CSS files — suitable for sharing across static apps.
-- Component library: not yet formalized into a component package. Consider extracting variables, utility classes, and a simple documentation page to make reuse easier.
+O Orenji Project nasceu como um conjunto de projetos para demonstrar capacidades praticas de desenvolvimento web num contexto de portfolio/PAF. Em vez de existir apenas uma aplicacao unica, o projeto foi organizado como uma familia de pequenas apps, cada uma com uma finalidade propria.
 
-Suggested short-term goals for the design system:
-- Add a `README.md` inside Orenji-core that lists available CSS variables, utility classes, and usage examples.
-- Create a small example page (e.g., `core/docs.html`) that demonstrates components and color usage.
+Esta estrutura permite mostrar varias competencias:
 
----
-
-## Repository structure (what I inspected)
-
-- orenji-fitness-app/
-  - index.html, inicio.html, treinos.html, resumo.html, configuracoes.html
-  - css/ (styles)
-  - js/ (scripts)
-  - assets/ (logo.png, logo_outline.png)
-
-- Orenji-Recipes/
-  - index.html, receita.html, pesquisar.html, favoritos.html, cozinha.html
-  - css/
-  - js/
-
-- Orenji-Study/
-  - index.html, dashboard.html, notas.html, tarefas.html, calendario.html, horario.html
-  - css/
-  - js/
-
-- Orenji-core/
-  - css/
-  - js/
-
-- Orenji-Focus-Orenji-Habit/
-  - Private repository — not inspected here.
-
-This structure indicates a set of static front-end projects that share a small core repository for styles and scripts.
+- Criacao de interfaces web com HTML, CSS e JavaScript.
+- Organizacao de multiplos repositorios relacionados.
+- Definicao de uma identidade visual consistente.
+- Reutilizacao de estilos, componentes e assets comuns.
+- Desenvolvimento de paginas estaticas com navegacao, layouts responsivos e interacoes simples.
 
 ---
 
-## Academic purpose
+## Aplicacoes
 
-These repositories serve as demonstration projects for a student's PAF portfolio. They are intentionally small, focused, and reproducible — ideal for showing HTML/CSS/JavaScript competence, design thinking, and the ability to structure multiple related projects.
+### Orenji Fitness
 
-When using these repos in academic submissions, please ensure you include proper documentation and credit where third-party assets or code were used.
+Aplicacao focada em treinos, resumo de atividade e configuracoes. Inclui agenda semanal, catalogo de treinos por categoria, registo de series/repeticoes/peso/duracao, historico de treinos, resumo de desempenho, metas semanais, mapa de foco muscular, temas visuais e exportacao/importacao de dados em JSON.
 
----
+### Orenji Study
 
-## Roadmap
+Aplicacao dedicada ao estudo, com dashboard, horario, notas, tarefas, calendario e configuracoes. Guarda aulas, notas, tarefas, eventos e preferencias no navegador, mantendo o contexto academico organizado num espaco unico.
 
-Short term (next 4–8 weeks):
-- Consolidate shared styles into Orenji-core documentation.
-- Add README files to each application with setup and run instructions (if any build steps are added).
-- Improve responsive styles and keyboard accessibility on interactive pages.
+### Orenji Tasks
 
-Medium term (3–6 months):
-- Add client-side persistence for user data (tasks, notes, favorites).
-- Add CI checks (linting) and automated deploy to GitHub Pages for finished apps.
-- Add screenshots and demo GIFs into `.github/profile/assets/` and reference them from this profile README.
+Modulo associado a listas, prazos e prioridades dentro do Orenji Study. O logo com checklist representa planeamento, progresso e acompanhamento de objetivos escolares.
 
-Long term (optional):
-- Turn Orenji-core into a small npm package (if the projects adopt toolchains).
-- Add a small back-end API for syncing data (if full-stack features are desired).
+### Orenji Recipes
 
----
+Aplicacao de receitas e cozinha, com paginas para pesquisa, favoritos, detalhe de receita, modo cozinha e configuracoes. O logo com chapeu de cozinheiro identifica o lado mais pratico e criativo da alimentacao.
 
-## Screenshots & assets
+### Orenji Focus / Habit
 
-Existing image assets discovered:
-- orenji-fitness-app/assets/logo.png (used above)
-- orenji-fitness-app/assets/logo_outline.png
+Area dividida em duas aplicacoes complementares: **Orenji Focus**, para produtividade e gestao de tempo com metodos como Pomodoro, Flowtime, 52/17 e Deep Work; e **Orenji Habit**, para rastrear habitos, sequencias, consistencia semanal e progresso visual. As duas apps partilham integracao atraves do modulo Orenji Shared.
 
-Recommended location for organization-level images (place them here):
-- `.github/profile/assets/` — add screenshots like `fitness-homepage.png`, `study-dashboard.png`, `recipes-list.png`.
+### Orenji Core
 
-Placeholders in this README
-- I created references to the `orenji-fitness-app` logo above using the repository's raw URL.
-- If you prefer to keep images inside this `.github` repository, add images to `.github/profile/assets/` and update the image links in this file to use relative paths (e.g., `./assets/fitness-homepage.png`).
-
-Alt text: all images used in this README include alt text for accessibility.
+Repositorio base para estilos, temas, layout, animacoes, componentes e scripts partilhados. A sua funcao e manter a consistencia visual e tecnica entre as varias aplicacoes.
 
 ---
 
-## License & status
+## Repositorios
 
-- License: None specified in the inspected repositories. If you want to publish educational or portfolio code publicly, add a license (MIT or similar) to each repository as appropriate.
-- Status: Student portfolio work — actively in development. Use for reference and demonstration; not a production-ready project.
+- `fitnessapp` - aplicacao de fitness com dashboard, treinos, resumo e configuracoes.
+- `Orenji Study` - ferramentas de estudo, notas, tarefas, calendario e horario.
+- `Orenji Recipes` - aplicacao de receitas, favoritos, pesquisa e modo cozinha.
+- `Orenji Focus + Orenji Habit` - area dedicada a foco, habitos, produtividade e integracao entre rotinas.
+- `Orenji core` - base visual e tecnica partilhada.
+- `about` - documentacao complementar do projeto.
+- `.github` - perfil da organizacao e assets institucionais.
 
 ---
 
-If you'd like, I can:
-- Add example screenshots placeholders to `.github/profile/assets/` (empty `.gitkeep` already included in this commit) and update links.
-- Create per-repository README templates summarizing each app and its local run instructions.
+## Tecnologias
 
-Thank you — I inspected the repositories' root files and folders to produce this summary. If you want the README to be stricter or shorter, or to include direct links to each file, tell me which style you prefer.
+O projeto e desenvolvido principalmente com:
+
+- HTML
+- CSS
+- JavaScript
+- localStorage
+- JSON
+
+As aplicacoes foram pensadas para serem simples, acessiveis e faceis de demonstrar, com persistencia local no navegador e sem depender obrigatoriamente de back-end ou bases de dados.
+
+---
+
+## Objetivo academico
+
+O Orenji Project tem como objetivo demonstrar competencias praticas de desenvolvimento front-end, design de interfaces e organizacao de projetos. As aplicacoes funcionam como exemplos de trabalho para portfolio, mostrando nao so paginas isoladas, mas tambem uma identidade visual coerente aplicada a varias ideias.
+
+---
+
+## Estado atual
+
+O projeto encontra-se em desenvolvimento ativo. As principais prioridades sao:
+
+- Melhorar a consistencia visual entre aplicacoes.
+- Consolidar estilos e componentes no `Orenji-core`.
+- Adicionar documentacao individual a cada repositorio.
+- Melhorar responsividade, acessibilidade e experiencia de utilizador.
+- Preparar capturas de ecra e demonstracoes para apresentacao em portfolio.
+- Continuar a aproximar Focus, Habit, Study, Recipes e Fitness atraves de dados locais, temas sincronizados e componentes partilhados.
+
