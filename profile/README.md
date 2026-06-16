@@ -92,20 +92,24 @@ Aplicacao de receitas e cozinha, com paginas para pesquisa, favoritos, detalhe d
 
 Area dividida em duas aplicacoes complementares: **Orenji Focus**, para produtividade e gestao de tempo com metodos como Pomodoro, Flowtime, 52/17 e Deep Work; e **Orenji Habit**, para rastrear habitos, sequencias, consistencia semanal e progresso visual. As duas apps partilham integracao atraves do modulo Orenji Shared.
 
+### Orenji Styles
+
+Repositorio base para estilos, temas, layout, animacoes, componentes e comportamento visual partilhado. A sua funcao e manter a consistencia visual entre as varias aplicacoes.
+
 ### Orenji Core
 
-Repositorio base para estilos, temas, layout, animacoes, componentes e scripts partilhados. A sua funcao e manter a consistencia visual e tecnica entre as varias aplicacoes.
+Repositorio reservado para documentacao, compatibilidade historica e fundacoes core que nao pertencam ao motor visual. A separacao do motor visual esta documentada no proprio repositorio.
 
 ---
 
 ## Repositorios
 
-- `fitnessapp` - aplicacao de fitness com dashboard, treinos, resumo e configuracoes.
-- `Orenji Study` - ferramentas de estudo, notas, tarefas, calendario e horario.
-- `Orenji Recipes` - aplicacao de receitas, favoritos, pesquisa e modo cozinha.
-- `Orenji Focus + Orenji Habit` - area dedicada a foco, habitos, produtividade e integracao entre rotinas.
-- `Orenji core` - base visual e tecnica partilhada.
-- `about` - documentacao complementar do projeto.
+- `orenji-fitness-app` - aplicacao de fitness com dashboard, treinos, resumo e configuracoes.
+- `Orenji-Study` - ferramentas de estudo, notas, tarefas, calendario e horario.
+- `Orenji-Recipes` - aplicacao de receitas, favoritos, pesquisa e modo cozinha.
+- `Orenji-Focus-Orenji-Habit` - area dedicada a foco, habitos, produtividade e integracao entre rotinas.
+- `Orenji-styles` - motor visual partilhado.
+- `Orenji-core` - documentacao e fundacoes core historicas.
 - `.github` - perfil da organizacao e assets institucionais.
 
 ---
@@ -132,10 +136,16 @@ O Orenji Project tem como objetivo demonstrar competencias praticas de desenvolv
 
 ## Estado atual
 
-O projeto encontra-se em desenvolvimento ativo. As principais prioridades sao:
+O projeto encontra-se em desenvolvimento ativo e segue a estrutura consolidada:
+
+- um projeto = um repositorio;
+- `main` = versao estavel para apresentacao;
+- `dev` = continuacao do desenvolvimento.
+
+As principais prioridades sao:
 
 - Melhorar a consistencia visual entre aplicacoes.
-- Consolidar estilos e componentes no `Orenji-core`.
+- Manter estilos e componentes partilhados no `Orenji-styles`.
 - Adicionar documentacao individual a cada repositorio.
 - Melhorar responsividade, acessibilidade e experiencia de utilizador.
 - Preparar capturas de ecra e demonstracoes para apresentacao em portfolio.
